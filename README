@@ -1,0 +1,136 @@
+PERSONAL NOTES ON ARTIFICIAL NEURAL NETWORKS STUDY
+
+
+CAP 1 - INTRODUÇÃO
+
+PRINCIPAIS CARACTERÍSTICAS DE UMA REDE NEURAL ARTIFICIAL:
+
+	- adaptação por experiẽncia
+	- capacidade de aprendizado
+	- habilidade de generalização
+	- organização de dados 
+	- tolerância a falhas
+	- armazenamento distruído
+	- facilidade de prototipagem
+
+
+TIMELINE
+
+1943	- McCulloch & Pitts - publicação relacionada à Neurocomputação
+1949	- Aprendizado de Hebb
+1957/8	- 1° neurocomputador, Mark I - Perceptron, por Frank Rosenblatt
+1969 	- publicação de Perceptron - an introduction to computational geometry, por Minksy & Papert
+****
+1980 - Backpropagation em Parallel distributed processing, por Rumerlhart, Hinton e Williams
+..
+
+
+POTENCIAIS ÁREAS DE APLICAÇÕES:
+
+	- aproximador universal de funções
+	- controle de processos
+	- reconhecimento / classificação de padrões
+	- agrupamento de dados (clusterização) - garimpagem de dados
+	- sistemas de previsão
+	- otimização de sistemas
+	- memórias associativas - processamento de imagens
+
+
+NEURÔNIO BIOLÓGICO
+
+			\	|   /
+			 \	|  /
+			  \ | /														  /4
+   			   \|/														 /
+      ---------(*)---------------------------3--------------------------o------
+			   /|\														 \
+			  / | \														  \
+			 /	|  \
+		 	/	|2  \
+      {   corpo celular 1  }{				axônio 3					}
+
+
+CONSTITUIÇÃO DO NEURÔNIO BIOLÓGICO							FUNÇÃO DESEMPENHADA NO NEURÔNIO ARTIFICIAL
+
+1 - corpo celular 											processamento das informações
+2 - dendritos												input
+3 - axônio													output
+4 - terminações sinápticas
+
+
+NEURÔNIO ARTIFICIAL
+
+	1 - sinais de entrada {x1, x2, x3, .. , xn}				input, proveniente do meio externo, aplicação
+	2 - pesos sinápticos {w1, w1, w1, .. , wn}				quantificação das relevâncias
+	3 - combinador linear { somatório }						agrega (1) ponderados por (2) para produzir potencial de ativação
+	4 - limiar de ativação { sigma }						contém o valor a ser atingido por (3) para que haja o disparo 
+	5 - potencial de ativação { u }							u = (3) - (4), if u >= (4) potencial excitatório, else inibitório
+	6 - função de ativação { g }							limitar a saída em um intervalo de valores razoáveis
+	7 - sinal de saída { y }								valor final produzido em relação a determindo conjunto de (1)
+
+
+SEGUNDO MCCULLOCH E PITTS
+
+	u = (somatório i=1 até n) wi * xi - sigma
+	y = g(u)
+
+	- input 			apresentação de um conjunto de valores de entrada
+	- ponderação		multiplicação de cada entrada entrada pelo seu respectivo peso sináptico
+	- potencial			obtenção de 'u' pela soma ponderada de 'x'  - sigma
+	- função			aplicação da função de ativação apropriada, tendo como objetivo limitar a saída
+	- compilação		compilação da saída por aplicação da função de ativação em relação ao seu 'u'
+
+
+FUNÇÕES DE ATIVAÇÃO PARCIALMENTE DIFERENCIÁVEIS
+possuem pontos cujas derivadas de primeira ordem são inexistentes.
+
+	- função degrau (heavyside / hard limiter)
+	- função degrau bipolar
+	- função rampa simétrica
+
+
+FUNÇÕES DE ATIVAÇÃO TOTALMENTE DIFERENCIÁVEIS
+as derivadas de primeira ordem existem e são conhecidas em todos os pontos de seu domínio de definição.
+
+	- função logística							{ família das funções sigmoidais
+	- função tangente hiperbólica  				{ família das funções sigmoidais
+	- função gaussiana
+	- função linear
+
+
+PARÂMETROS DE DESEMPENHO
+comparações entre os neurônios artificiais e os biológicos mostram que apesar do tempo de processamento
+dos neurônios artificiais serem muito superior ao dos neurônios biológicos, por conta da rede neural 
+biológica trabalhar com um elevado grau de paralelismo entre seus neurônios e não ser possível ainda
+ultrapassar tal limitação em uma rede neural artificial, o processamento cerebral é inifinitas (?) 
+vezes mais rápido que o de uma artificial. 
+
+EXERCÍCIOS - CAP 1 ***
+
+
+CAP 2 - ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS E PROCESSOS DE TREINAMENTO
+
+	- arquitetura 			forma como seus diversos neurônios estão arranjados uns em relação aos outros
+	- topologia				diferentes formas de composições estruturais que poderá assumir em uma arquitetura
+	
+
+PRINCIPAIS ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS
+
+		~ partes de uma ANN:
+			. camada de entrada
+			. camadas escondidas, intermediárias, ocultas ou invisíveis
+			. camada de saída
+
+	- arquitetura feedforward de camada simples		{ classificação de padrões e filtragem linear
+	- arquiteura feedforward de camadas múltiplas	{ classificação de padrões, robótica, otimização, controle de processos 
+	- redes recorrentes								{ previsão de séries temporais, otimização, controle de processos
+	- redes reticuladas								{ clustering, reconhecimento de padrões, otimização, grafos. rede de kohonen
+
+
+CAP 3 - REDE PERCEPTRON
+
+o perceptron foi idealizado por rosenbatt (1958), é a forma mais simples de configuração de uma rede neural artificial, 
+cujo propósito focava em implementar um modelo computacional inspirado na retina, objetivando-se então um elemento de 
+percepção eletrônica de sinais. uma de suas aplicações consistia na identificações de PADRÕES GEOMÉTRICOS.
+
+
