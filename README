@@ -62,9 +62,9 @@ NEURÔNIO ARTIFICIAL
 
 	1 - sinais de entrada {x1, x2, x3, .. , xn}     input, proveniente do meio externo, aplicação
 	2 - pesos sinápticos {w1, w1, w1, .. , wn}      quantificação das relevâncias
-	3 - combinador linear { somatório }             agrega (1) ponderados por (2) para produzir potencial de ativação
+	3 - combinador linear { somatório }             (1) ponderados por (2) produz potencial de ativação
 	4 - limiar de ativação { sigma }                contém o valor a ser atingido por (3) para que haja o disparo 
-	5 - potencial de ativação { u }                 u = (3) - (4), if u >= (4) potencial excitatório, else inibitório
+	5 - potencial de ativação { u }                 u = (3) - (4), if u >= (4) excitatório else inibitório
 	6 - função de ativação { g }                    limitar a saída em um intervalo de valores razoáveis
 	7 - sinal de saída { y }                        valor final produzido em relação a determindo conjunto de (1)
 
