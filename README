@@ -40,14 +40,14 @@ NEURÔNIO BIOLÓGICO
 
       \   |   /
        \  |  /
-        \ | /														  /4
-         \|/														 /
----------(*)---------------------------3--------------------------o------
-         /|\														 \
-        / | \														  \
+        \ | /                                            /4
+         \|/                                            /
+---------(*)----------------3--------------------------o------
+         /|\                                            \
+        / | \                                            \
        /  |  \
       /   |2  \
-      {   corpo celular 1  }{				axônio 3					}
+      {   corpo celular 1  }{              axônio 3    }
 
 
 CONSTITUIÇÃO DO NEURÔNIO BIOLÓGICO			FUNÇÃO DESEMPENHADA NO NEURÔNIO ARTIFICIAL
