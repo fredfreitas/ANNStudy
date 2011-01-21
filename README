@@ -74,11 +74,11 @@ SEGUNDO MCCULLOCH E PITTS
 	u = (somatório i=1 até n) wi * xi - sigma
 	y = g(u)
 
-	- input 			apresentação de um conjunto de valores de entrada
-	- ponderação		multiplicação de cada entrada entrada pelo seu respectivo peso sináptico
-	- potencial			obtenção de 'u' pela soma ponderada de 'x'  - sigma
-	- função			aplicação da função de ativação apropriada, tendo como objetivo limitar a saída
-	- compilação		compilação da saída por aplicação da função de ativação em relação ao seu 'u'
+	- input             apresentação de um conjunto de valores de entrada
+	- ponderação        multiplicação de cada entrada entrada pelo seu respectivo peso sináptico
+	- potencial         obtenção de 'u' pela soma ponderada de 'x'  - sigma
+	- função            aplicação da função de ativação apropriada, tendo como objetivo limitar a saída
+	- compilação        compilação da saída por aplicação da função de ativação em relação ao seu 'u'
 
 
 FUNÇÕES DE ATIVAÇÃO PARCIALMENTE DIFERENCIÁVEIS
