@@ -18,7 +18,7 @@ TIMELINE
 
 1943	- McCulloch & Pitts - publicação relacionada à Neurocomputação
 1949	- Aprendizado de Hebb
-1957/8	- 1° neurocomputador, Mark I - Perceptron, por Frank Rosenblatt
+1957	- 1° neurocomputador, Mark I - Perceptron, por Frank Rosenblatt
 1969 	- publicação de Perceptron - an introduction to computational geometry, por Minksy & Papert
 ****
 1980 - Backpropagation em Parallel distributed processing, por Rumerlhart, Hinton e Williams
@@ -38,23 +38,23 @@ POTENCIAIS ÁREAS DE APLICAÇÕES:
 
 NEURÔNIO BIOLÓGICO
 
-			\	|   /
-			 \	|  /
-			  \ | /														  /4
-   			   \|/														 /
-      ---------(*)---------------------------3--------------------------o------
-			   /|\														 \
-			  / | \														  \
-			 /	|  \
-		 	/	|2  \
+      \   |   /
+       \  |  /
+        \ | /														  /4
+         \|/														 /
+---------(*)---------------------------3--------------------------o------
+         /|\														 \
+        / | \														  \
+       /  |  \
+      /   |2  \
       {   corpo celular 1  }{				axônio 3					}
 
 
-CONSTITUIÇÃO DO NEURÔNIO BIOLÓGICO							FUNÇÃO DESEMPENHADA NO NEURÔNIO ARTIFICIAL
+CONSTITUIÇÃO DO NEURÔNIO BIOLÓGICO			FUNÇÃO DESEMPENHADA NO NEURÔNIO ARTIFICIAL
 
-1 - corpo celular 											processamento das informações
-2 - dendritos												input
-3 - axônio													output
+1 - corpo celular 							processamento das informações
+2 - dendritos								input
+3 - axônio									output
 4 - terminações sinápticas
 
 
@@ -110,8 +110,8 @@ EXERCÍCIOS - CAP 1 ***
 
 CAP 2 - ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS E PROCESSOS DE TREINAMENTO
 
-	- arquitetura 			forma como seus diversos neurônios estão arranjados uns em relação aos outros
-	- topologia				diferentes formas de composições estruturais que poderá assumir em uma arquitetura
+	- arquitetura 		forma como seus diversos neurônios estão arranjados uns em relação aos outros
+	- topologia			diferentes formas de composições estruturais que poderá assumir em uma arquitetura
 	
 
 PRINCIPAIS ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS
@@ -132,5 +132,4 @@ CAP 3 - REDE PERCEPTRON
 o perceptron foi idealizado por rosenbatt (1958), é a forma mais simples de configuração de uma rede neural artificial, 
 cujo propósito focava em implementar um modelo computacional inspirado na retina, objetivando-se então um elemento de 
 percepção eletrônica de sinais. uma de suas aplicações consistia na identificações de PADRÕES GEOMÉTRICOS.
-
 
