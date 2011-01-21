@@ -133,3 +133,20 @@ o perceptron foi idealizado por rosenbatt (1958), é a forma mais simples de con
 cujo propósito focava em implementar um modelo computacional inspirado na retina, objetivando-se então um elemento de 
 percepção eletrônica de sinais. uma de suas aplicações consistia na identificações de PADRÕES GEOMÉTRICOS.
 
+
+PRINCÍPIO DE FUNCIONAMENTO DO PERCEPTRON
+
+cada uma das entradas (xi), as quais representam informações sobre o comportamento do processo a ser mapeado, será
+inicialmente ponderada pelos pesos sinápticos (wi) a fim de quantificar a importância de cada uma frente aos objetivos
+funcionais atribuídos ao neurônio, cujo propósito será então mapear o comportamento entrada / saída do referido processo.
+
+em seguida o valor resultante da composição de todas as entradas já devidamente ponderadas pelos seus respectivos pesos,
+adicionado ainda do limiar de ativação (sigma), é repassado como argumento da função de ativação, cujo resultado de retorno 
+será a saída (y) produzida pelo perceptron. em termos matemáticos, o processamento interno realizado pelo perceptron pode
+ser descrito pelas seguintes expressões:
+
+u = (somatório de i=1 até n) wi * xi - sigma
+
+y = g(u)
+
+pg 60
