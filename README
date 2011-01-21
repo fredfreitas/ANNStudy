@@ -52,21 +52,21 @@ NEURÔNIO BIOLÓGICO
 
 CONSTITUIÇÃO DO NEURÔNIO BIOLÓGICO			FUNÇÃO DESEMPENHADA NO NEURÔNIO ARTIFICIAL
 
-1 - corpo celular 							processamento das informações
-2 - dendritos								input
-3 - axônio									output
+1 - corpo celular                           processamento das informações
+2 - dendritos                               input
+3 - axônio                                  output
 4 - terminações sinápticas
 
 
 NEURÔNIO ARTIFICIAL
 
-	1 - sinais de entrada {x1, x2, x3, .. , xn}				input, proveniente do meio externo, aplicação
-	2 - pesos sinápticos {w1, w1, w1, .. , wn}				quantificação das relevâncias
-	3 - combinador linear { somatório }						agrega (1) ponderados por (2) para produzir potencial de ativação
-	4 - limiar de ativação { sigma }						contém o valor a ser atingido por (3) para que haja o disparo 
-	5 - potencial de ativação { u }							u = (3) - (4), if u >= (4) potencial excitatório, else inibitório
-	6 - função de ativação { g }							limitar a saída em um intervalo de valores razoáveis
-	7 - sinal de saída { y }								valor final produzido em relação a determindo conjunto de (1)
+	1 - sinais de entrada {x1, x2, x3, .. , xn}     input, proveniente do meio externo, aplicação
+	2 - pesos sinápticos {w1, w1, w1, .. , wn}      quantificação das relevâncias
+	3 - combinador linear { somatório }             agrega (1) ponderados por (2) para produzir potencial de ativação
+	4 - limiar de ativação { sigma }                contém o valor a ser atingido por (3) para que haja o disparo 
+	5 - potencial de ativação { u }                 u = (3) - (4), if u >= (4) potencial excitatório, else inibitório
+	6 - função de ativação { g }                    limitar a saída em um intervalo de valores razoáveis
+	7 - sinal de saída { y }                        valor final produzido em relação a determindo conjunto de (1)
 
 
 SEGUNDO MCCULLOCH E PITTS
@@ -92,8 +92,8 @@ possuem pontos cujas derivadas de primeira ordem são inexistentes.
 FUNÇÕES DE ATIVAÇÃO TOTALMENTE DIFERENCIÁVEIS
 as derivadas de primeira ordem existem e são conhecidas em todos os pontos de seu domínio de definição.
 
-	- função logística							{ família das funções sigmoidais
-	- função tangente hiperbólica  				{ família das funções sigmoidais
+	- função logística                  { família das funções sigmoidais
+	- função tangente hiperbólica       { família das funções sigmoidais
 	- função gaussiana
 	- função linear
 
@@ -110,8 +110,8 @@ EXERCÍCIOS - CAP 1 ***
 
 CAP 2 - ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS E PROCESSOS DE TREINAMENTO
 
-	- arquitetura 		forma como seus diversos neurônios estão arranjados uns em relação aos outros
-	- topologia			diferentes formas de composições estruturais que poderá assumir em uma arquitetura
+	- arquitetura       forma como seus diversos neurônios estão arranjados uns em relação aos outros
+	- topologia         diferentes formas de composições estruturais que poderá assumir em uma arquitetura
 	
 
 PRINCIPAIS ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS
@@ -121,10 +121,10 @@ PRINCIPAIS ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS
 			. camadas escondidas, intermediárias, ocultas ou invisíveis
 			. camada de saída
 
-	- arquitetura feedforward de camada simples		{ classificação de padrões e filtragem linear
-	- arquiteura feedforward de camadas múltiplas	{ classificação de padrões, robótica, otimização, controle de processos 
-	- redes recorrentes								{ previsão de séries temporais, otimização, controle de processos
-	- redes reticuladas								{ clustering, reconhecimento de padrões, otimização, grafos. rede de kohonen
+	- arquitetura feedforward de camada simples     { classificação de padrões e filtragem linear
+	- arquiteura feedforward de camadas múltiplas   { classificação de padrões, robótica, otimização, controle de processos 
+	- redes recorrentes                             { previsão de séries temporais, otimização, controle de processos
+	- redes reticuladas                             { clustering, reconhecimento de padrões, otimização, grafos. rede de kohonen
 
 
 CAP 3 - REDE PERCEPTRON
