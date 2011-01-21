@@ -122,9 +122,9 @@ PRINCIPAIS ARQUITETURAS DE REDES NEURAIS ARTIFICIAIS
 			. camada de saída
 
 	- arquitetura feedforward de camada simples     { classificação de padrões e filtragem linear
-	- arquiteura feedforward de camadas múltiplas   { classificação de padrões, robótica, otimização, controle de processos 
-	- redes recorrentes                             { previsão de séries temporais, otimização, controle de processos
-	- redes reticuladas                             { clustering, reconhecimento de padrões, otimização, grafos. rede de kohonen
+	- arquiteura feedforward de camadas múltiplas   { c. de padrões, robótica, otimização, controle de processos 
+	- redes recorrentes                             { prev de séries temporais, otimização, controle de processos
+	- redes reticuladas                             { clustering, recon de padrões, otimização, grafos. rede de kohonen
 
 
 CAP 3 - REDE PERCEPTRON
