@@ -20,7 +20,7 @@ public class Sample extends Perceptron {
             sigma += x[i] * w[i];
         }
 
-        u = sigma - teta;
+        u = sigma - w[0];       // w[0] é teta
         if(u>=0) {
             y = 1;
         } else {

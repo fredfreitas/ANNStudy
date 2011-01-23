@@ -14,7 +14,7 @@ public class Perceptron {
         w = new double[nEnt];
 
         for(int i=0; i<4; i++) {
-			w[i] = (double) (Math.random() * nEnt);
+			w[i] = (double) (Math.random() * nEnt);         // w[0] é teta, limiar
 		}
     }
 
@@ -47,7 +47,10 @@ public class Perceptron {
 
 
     public void doOps() {
-        double u;
+
+        double [] u = new double[nSamp];
+        
+        
     }
 
 }

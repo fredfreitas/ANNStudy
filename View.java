@@ -1,11 +1,14 @@
 import javax.swing.*;
 
 public class View extends JFrame {
-	public View() {
+    
+    public Sample Amostra;
 
+	public View() {
+	    Amostra = new Sample(3);
     }
 
-    public void panelSample(){
+    public void askSample(){
         
 		JTextField e0 = new JTextField();
 		JTextField e1 = new JTextField();
@@ -33,9 +36,8 @@ public class View extends JFrame {
             E[2] = Double.parseDouble(e2.getText()); // entrada 2
             E[3] = Double.parseDouble(e3.getText()); // entrada 3
             E[0] = Integer.parseInt(e0.getText()); // valor esperado
-
-            // eu poderia chamar a função getSamples() daqui
-            // Sample(E);
+            
+            Amostra.getSample(E);
 
 		} else {
 			System.out.println("canceled " );
@@ -49,6 +51,6 @@ public class View extends JFrame {
     	frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     	frame.pack();
     	frame.setVisible(true);
-        frame.panelSample();
+        frame.askSample();      // obtem uma amostra
     }
 }
