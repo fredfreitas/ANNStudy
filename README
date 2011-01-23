@@ -63,7 +63,7 @@ NEURÔNIO ARTIFICIAL
 	1 - sinais de entrada {x1, x2, x3, .. , xn}     input, proveniente do meio externo, aplicação
 	2 - pesos sinápticos {w1, w1, w1, .. , wn}      quantificação das relevâncias
 	3 - combinador linear { somatório }             (1) ponderados por (2) produz potencial de ativação
-	4 - limiar de ativação { sigma }                contém o valor a ser atingido por (3) para que haja o disparo 
+	4 - limiar de ativação { teta }                contém o valor a ser atingido por (3) para que haja o disparo 
 	5 - potencial de ativação { u }                 u = (3) - (4), if u >= (4) excitatório else inibitório
 	6 - função de ativação { g }                    limitar a saída em um intervalo de valores razoáveis
 	7 - sinal de saída { y }                        valor final produzido em relação a determindo conjunto de (1)
@@ -71,12 +71,12 @@ NEURÔNIO ARTIFICIAL
 
 SEGUNDO MCCULLOCH E PITTS
 
-	u = (somatório i=1 até n) wi * xi - sigma
+	u = (somatório i=1 até n) wi * xi - teta
 	y = g(u)
 
 	- input             apresentação de um conjunto de valores de entrada
 	- ponderação        multiplicação de cada entrada entrada pelo seu respectivo peso sináptico
-	- potencial         obtenção de 'u' pela soma ponderada de 'x'  - sigma
+	- potencial         obtenção de 'u' pela soma ponderada de 'x'  - teta
 	- função            aplicação da função de ativação apropriada, tendo como objetivo limitar a saída
 	- compilação        compilação da saída por aplicação da função de ativação em relação ao seu 'u'
 
@@ -141,12 +141,22 @@ inicialmente ponderada pelos pesos sinápticos (wi) a fim de quantificar a impor
 funcionais atribuídos ao neurônio, cujo propósito será então mapear o comportamento entrada / saída do referido processo.
 
 em seguida o valor resultante da composição de todas as entradas já devidamente ponderadas pelos seus respectivos pesos,
-adicionado ainda do limiar de ativação (sigma), é repassado como argumento da função de ativação, cujo resultado de retorno 
+adicionado ainda do limiar de ativação (teta), é repassado como argumento da função de ativação, cujo resultado de retorno 
 será a saída (y) produzida pelo perceptron. em termos matemáticos, o processamento interno realizado pelo perceptron pode
 ser descrito pelas seguintes expressões:
 
-u = (somatório de i=1 até n) wi * xi - sigma
+u = (somatório de i=1 até n) wi * xi - teta
 
 y = g(u)
 
-pg 60
+
+ENTENDENDO A IMPLEMENTAÇÃO
+
+1 - receber primeiro vetor de amostra e valor esperado
+    * pág 65, o que são aqueles -1?
+
+2 - resolver o somatório e setá-lo de acordo com a função g, bipolar, no caso, em x[0]
+
+3 - * dúvida no cálculo do erro
+
+
